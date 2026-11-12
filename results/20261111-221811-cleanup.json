@@ -1,0 +1,9 @@
+{
+  "pack": "langwars-stress",
+  "packVersion": "1.0.0",
+  "command": "cleanup",
+  "target": "https://langwars.gerosp.ru",
+  "createdAt": "2026-11-11T19:18:11Z",
+  "deleted": 150,
+  "missing": 0
+}

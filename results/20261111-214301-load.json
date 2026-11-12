@@ -1,0 +1,531 @@
+{
+  "pack": "langwars-stress",
+  "packVersion": "1.0.0",
+  "command": "load",
+  "target": "https://langwars.gerosp.ru",
+  "createdAt": "2026-11-11T18:43:01Z",
+  "scenario": "mixed",
+  "requestedPlayers": 150,
+  "usedPlayers": 150,
+  "durationSeconds": 600.0,
+  "rampUpSeconds": 10.0,
+  "thinkTimeSeconds": 12.0,
+  "seed": 1794422543,
+  "tasks": [],
+  "shadowGroupSize": 4,
+  "coreOverrideEvery": 5,
+  "coreOverrides": [],
+  "metrics": {
+    "startedAt": "2026-11-11T18:42:25Z",
+    "elapsedSeconds": 35.223,
+    "requests": 590,
+    "requestsPerSecond": 16.75,
+    "clientErrors": 0,
+    "serverErrors": 0,
+    "transportErrors": 0,
+    "authRelogins": 0,
+    "ops": {
+      "GET /api/tasks": {
+        "count": 38,
+        "success": 38,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 149.538,
+        "minMs": 121.983,
+        "p50Ms": 150.254,
+        "p95Ms": 167.338,
+        "p99Ms": 173.277,
+        "maxMs": 173.277
+      },
+      "POST /api/tasks/{id}/run": {
+        "count": 49,
+        "success": 49,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 100.441,
+        "minMs": 79.258,
+        "p50Ms": 96.557,
+        "p95Ms": 147.509,
+        "p99Ms": 188.612,
+        "maxMs": 188.612
+      },
+      "GET /api/jobs/{id}": {
+        "count": 202,
+        "success": 202,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 50.252,
+        "minMs": 42.678,
+        "p50Ms": 49.131,
+        "p95Ms": 59.831,
+        "p99Ms": 68.209,
+        "maxMs": 75.876
+      },
+      "GET /api/submissions": {
+        "count": 31,
+        "success": 31,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 93.958,
+        "minMs": 78.736,
+        "p50Ms": 96.613,
+        "p95Ms": 102.567,
+        "p99Ms": 111.207,
+        "maxMs": 111.207
+      },
+      "POST /api/tasks/{id}/submit": {
+        "count": 34,
+        "success": 34,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 103.302,
+        "minMs": 83.201,
+        "p50Ms": 95.264,
+        "p95Ms": 136.266,
+        "p99Ms": 198.699,
+        "maxMs": 198.699
+      },
+      "GET /api/tasks/{id}/submissions": {
+        "count": 14,
+        "success": 14,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 97.914,
+        "minMs": 81.937,
+        "p50Ms": 95.691,
+        "p95Ms": 106.937,
+        "p99Ms": 114.584,
+        "maxMs": 114.584
+      },
+      "GET /api/config": {
+        "count": 3,
+        "success": 3,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 80.53,
+        "minMs": 74.383,
+        "p50Ms": 80.295,
+        "p95Ms": 86.912,
+        "p99Ms": 86.912,
+        "maxMs": 86.912
+      },
+      "GET /api/rating": {
+        "count": 36,
+        "success": 36,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 122.295,
+        "minMs": 82.98,
+        "p50Ms": 124.468,
+        "p95Ms": 146.831,
+        "p99Ms": 151.565,
+        "maxMs": 151.565
+      },
+      "GET /api/rating/tables": {
+        "count": 11,
+        "success": 11,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 96.984,
+        "minMs": 87.529,
+        "p50Ms": 95.746,
+        "p95Ms": 112.14,
+        "p99Ms": 112.14,
+        "maxMs": 112.14
+      },
+      "GET /api/notifications": {
+        "count": 45,
+        "success": 45,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 92.584,
+        "minMs": 76.557,
+        "p50Ms": 95.082,
+        "p95Ms": 105.788,
+        "p99Ms": 115.945,
+        "maxMs": 115.945
+      },
+      "GET /api/tasks/{id}": {
+        "count": 38,
+        "success": 38,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 100.607,
+        "minMs": 86.204,
+        "p50Ms": 101.53,
+        "p95Ms": 110.529,
+        "p99Ms": 113.128,
+        "maxMs": 113.128
+      },
+      "GET /api/news": {
+        "count": 11,
+        "success": 11,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 89.798,
+        "minMs": 76.766,
+        "p50Ms": 82.908,
+        "p95Ms": 106.693,
+        "p99Ms": 106.693,
+        "maxMs": 106.693
+      },
+      "GET /api/rating?task": {
+        "count": 13,
+        "success": 13,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 130.831,
+        "minMs": 104.493,
+        "p50Ms": 127.433,
+        "p95Ms": 151.091,
+        "p99Ms": 160.33,
+        "maxMs": 160.33
+      },
+      "GET /api/me": {
+        "count": 16,
+        "success": 16,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 86.526,
+        "minMs": 58.554,
+        "p50Ms": 85.587,
+        "p95Ms": 103.586,
+        "p99Ms": 113.297,
+        "maxMs": 113.297
+      },
+      "GET /api/tasks/{id}/insights": {
+        "count": 18,
+        "success": 18,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 101.701,
+        "minMs": 81.065,
+        "p50Ms": 100.679,
+        "p95Ms": 118.094,
+        "p99Ms": 120.162,
+        "maxMs": 120.162
+      },
+      "GET /api/namespace": {
+        "count": 21,
+        "success": 21,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 92.597,
+        "minMs": 76.625,
+        "p50Ms": 90.547,
+        "p95Ms": 105.794,
+        "p99Ms": 123.323,
+        "maxMs": 123.323
+      },
+      "POST /api/notifications": {
+        "count": 3,
+        "success": 3,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 89.573,
+        "minMs": 82.919,
+        "p50Ms": 84.143,
+        "p95Ms": 101.658,
+        "p99Ms": 101.658,
+        "maxMs": 101.658
+      },
+      "PATCH /api/me": {
+        "count": 3,
+        "success": 3,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 145.686,
+        "minMs": 138.22,
+        "p50Ms": 148.262,
+        "p95Ms": 150.577,
+        "p99Ms": 150.577,
+        "maxMs": 150.577
+      },
+      "GET /api/submissions/{id}": {
+        "count": 2,
+        "success": 2,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 93.117,
+        "minMs": 82.184,
+        "p50Ms": 82.184,
+        "p95Ms": 104.05,
+        "p99Ms": 104.05,
+        "maxMs": 104.05
+      },
+      "POST /api/notifications/read": {
+        "count": 2,
+        "success": 2,
+        "clientErrors": 0,
+        "serverErrors": 0,
+        "transportErrors": 0,
+        "codes": {},
+        "meanMs": 53.61,
+        "minMs": 50.462,
+        "p50Ms": 50.462,
+        "p95Ms": 56.759,
+        "p99Ms": 56.759,
+        "maxMs": 56.759
+      }
+    },
+    "judge": {
+      "submitted": 83,
+      "accepted": 83,
+      "rejected": 0,
+      "rejectionCodes": {},
+      "completed": 80,
+      "failed": 0,
+      "timeouts": 0,
+      "inFlight": 3,
+      "completionRatio": 1.0,
+      "verdicts": {
+        "OK": 57,
+        "WRONG_ANSWER": 23
+      },
+      "errors": {},
+      "polls": 202,
+      "e2e": {
+        "count": 80,
+        "meanMs": 1018.676,
+        "minMs": 508.507,
+        "p50Ms": 930.576,
+        "p95Ms": 1521.392,
+        "p99Ms": 2424.261,
+        "maxMs": 2871.718
+      },
+      "execution": {
+        "count": 80,
+        "meanMs": 0.471,
+        "minMs": 0.07,
+        "p50Ms": 0.19,
+        "p95Ms": 1.31,
+        "p99Ms": 1.52,
+        "maxMs": 1.87
+      },
+      "queueEstimate": {
+        "count": 80,
+        "meanMs": 1018.205,
+        "minMs": 508.357,
+        "p50Ms": 930.217,
+        "p95Ms": 1520.702,
+        "p99Ms": 2423.131,
+        "maxMs": 2870.408
+      },
+      "ratingDelta": {
+        "count": 20,
+        "meanMs": 89.5,
+        "minMs": 50.0,
+        "p50Ms": 80.0,
+        "p95Ms": 150.0,
+        "p99Ms": 150.0,
+        "maxMs": 150.0
+      }
+    },
+    "timeline": [
+      {
+        "second": 3,
+        "requests": 14,
+        "errors": 0
+      },
+      {
+        "second": 4,
+        "requests": 23,
+        "errors": 0
+      },
+      {
+        "second": 5,
+        "requests": 24,
+        "errors": 0
+      },
+      {
+        "second": 6,
+        "requests": 20,
+        "errors": 0
+      },
+      {
+        "second": 7,
+        "requests": 23,
+        "errors": 0
+      },
+      {
+        "second": 8,
+        "requests": 21,
+        "errors": 0
+      },
+      {
+        "second": 9,
+        "requests": 23,
+        "errors": 0
+      },
+      {
+        "second": 10,
+        "requests": 25,
+        "errors": 0
+      },
+      {
+        "second": 11,
+        "requests": 33,
+        "errors": 0
+      },
+      {
+        "second": 12,
+        "requests": 32,
+        "errors": 0
+      },
+      {
+        "second": 13,
+        "requests": 23,
+        "errors": 0
+      },
+      {
+        "second": 14,
+        "requests": 8,
+        "errors": 0
+      },
+      {
+        "second": 15,
+        "requests": 13,
+        "errors": 0
+      },
+      {
+        "second": 16,
+        "requests": 11,
+        "errors": 0
+      },
+      {
+        "second": 17,
+        "requests": 24,
+        "errors": 0
+      },
+      {
+        "second": 18,
+        "requests": 22,
+        "errors": 0
+      },
+      {
+        "second": 19,
+        "requests": 13,
+        "errors": 0
+      },
+      {
+        "second": 20,
+        "requests": 19,
+        "errors": 0
+      },
+      {
+        "second": 21,
+        "requests": 14,
+        "errors": 0
+      },
+      {
+        "second": 22,
+        "requests": 9,
+        "errors": 0
+      },
+      {
+        "second": 23,
+        "requests": 21,
+        "errors": 0
+      },
+      {
+        "second": 24,
+        "requests": 10,
+        "errors": 0
+      },
+      {
+        "second": 25,
+        "requests": 12,
+        "errors": 0
+      },
+      {
+        "second": 26,
+        "requests": 21,
+        "errors": 0
+      },
+      {
+        "second": 27,
+        "requests": 23,
+        "errors": 0
+      },
+      {
+        "second": 28,
+        "requests": 14,
+        "errors": 0
+      },
+      {
+        "second": 29,
+        "requests": 19,
+        "errors": 0
+      },
+      {
+        "second": 30,
+        "requests": 12,
+        "errors": 0
+      },
+      {
+        "second": 31,
+        "requests": 13,
+        "errors": 0
+      },
+      {
+        "second": 32,
+        "requests": 13,
+        "errors": 0
+      },
+      {
+        "second": 33,
+        "requests": 20,
+        "errors": 0
+      },
+      {
+        "second": 34,
+        "requests": 14,
+        "errors": 0
+      },
+      {
+        "second": 35,
+        "requests": 4,
+        "errors": 0
+      }
+    ]
+  },
+  "problems": []
+}
